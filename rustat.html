@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Русско-татарский словарь</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Русско-татарский и татарско-русский словарь</h1>
+        
+        <!-- Поиск -->
+        <div class="search-section">
+            <input type="text" id="searchInput" placeholder="Введите слово для поиска...">
+            <button id="searchBtn">Найти</button>
+        </div>
+        
+        <!-- Результаты поиска -->
+        <div id="results" class="results"></div>
+        
+        <!-- Добавление нового слова -->
+        <div class="add-word-section">
+            <h2>Добавить новое слово</h2>
+            <form id="addWordForm">
+                <div class="form-group">
+                    <label for="russianWord">Русское слово:</label>
+                    <input type="text" id="russianWord" required>
+                </div>
+                <div class="form-group">
+                    <label for="tatarWord">Татарское слово:</label>
+                    <input type="text" id="tatarWord" required>
+                </div>
+                <button type="submit">Добавить слово</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
